@@ -35,3 +35,182 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.bundle
+GlobalGameJam2022/Assets/Editor Default Resources.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_analytics.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_analytics.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_analytics_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_analytics_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_auth.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_auth.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_auth_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_auth_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_config.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_config.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_config_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_config_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_crashlytics.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_crashlytics.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_database.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_database.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_database_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_database_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_dynamic_links.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_dynamic_links.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_functions.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_functions.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_functions_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_functions_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_invites.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_invites.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_invites_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_invites_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_storage.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_storage.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_storage_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/fb_storage_dark.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/firebase_lockup.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/firebase_lockup.png.meta
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png
+GlobalGameJam2022/Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.IOSResolver.dll
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.IOSResolver.dll.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.JarResolver.dll
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.JarResolver.dll.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.PackageManagerResolver.dll
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.PackageManagerResolver.dll.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.VersionHandlerImpl.dll
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/1.2.179/Google.VersionHandlerImpl.dll.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/CHANGELOG.md
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/CHANGELOG.md.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.179_manifest.txt
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.179_manifest.txt.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/LICENSE
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/LICENSE.meta
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/README.md
+GlobalGameJam2022/Assets/ExternalDependencyManager/Editor/README.md.meta
+GlobalGameJam2022/Assets/Firebase.meta
+GlobalGameJam2022/Assets/Firebase/Editor.meta
+GlobalGameJam2022/Assets/Firebase/Editor/AppDependencies.xml
+GlobalGameJam2022/Assets/Firebase/Editor/AppDependencies.xml.meta
+GlobalGameJam2022/Assets/Firebase/Editor/AuthDependencies.xml
+GlobalGameJam2022/Assets/Firebase/Editor/AuthDependencies.xml.meta
+GlobalGameJam2022/Assets/Firebase/Editor/DatabaseDependencies.xml
+GlobalGameJam2022/Assets/Firebase/Editor/DatabaseDependencies.xml.meta
+GlobalGameJam2022/Assets/Firebase/Editor/Firebase.Editor.dll
+GlobalGameJam2022/Assets/Firebase/Editor/Firebase.Editor.dll.meta
+GlobalGameJam2022/Assets/Firebase/Editor/FirebaseAuth_version-11.7.0_manifest.txt
+GlobalGameJam2022/Assets/Firebase/Editor/FirebaseAuth_version-11.7.0_manifest.txt.meta
+GlobalGameJam2022/Assets/Firebase/Editor/FirebaseDatabase_version-11.7.0_manifest.txt
+GlobalGameJam2022/Assets/Firebase/Editor/FirebaseDatabase_version-11.7.0_manifest.txt.meta
+GlobalGameJam2022/Assets/Firebase/Editor/generate_xml_from_google_services_json.exe
+GlobalGameJam2022/Assets/Firebase/Editor/generate_xml_from_google_services_json.exe.meta
+GlobalGameJam2022/Assets/Firebase/Editor/generate_xml_from_google_services_json.py
+GlobalGameJam2022/Assets/Firebase/Editor/generate_xml_from_google_services_json.py.meta
+GlobalGameJam2022/Assets/Firebase/Editor/network_request.exe
+GlobalGameJam2022/Assets/Firebase/Editor/network_request.exe.meta
+GlobalGameJam2022/Assets/Firebase/Editor/network_request.py
+GlobalGameJam2022/Assets/Firebase/Editor/network_request.py.meta
+GlobalGameJam2022/Assets/Firebase/m2repository.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.7.0.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.7.0/firebase-app-unity-11.7.0.pom
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.7.0/firebase-app-unity-11.7.0.pom.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.7.0/firebase-app-unity-11.7.0.srcaar
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.7.0/firebase-app-unity-11.7.0.srcaar.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.7.0.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.7.0/firebase-auth-unity-11.7.0.pom
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.7.0/firebase-auth-unity-11.7.0.pom.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.7.0/firebase-auth-unity-11.7.0.srcaar
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.7.0/firebase-auth-unity-11.7.0.srcaar.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/maven-metadata.xml.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.7.0.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.7.0/firebase-database-unity-11.7.0.pom
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.7.0/firebase-database-unity-11.7.0.pom.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.7.0/firebase-database-unity-11.7.0.srcaar
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.7.0/firebase-database-unity-11.7.0.srcaar.meta
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml
+GlobalGameJam2022/Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml.meta
+GlobalGameJam2022/Assets/Firebase/Plugins.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.App.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.App.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Auth.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Auth.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Database.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Database.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Platform.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.Platform.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.TaskExtension.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Firebase.TaskExtension.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/Google.MiniJson.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/Google.MiniJson.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.App.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.App.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.Auth.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.Auth.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.Database.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/iOS/Firebase.Database.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_7_0.bundle.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_7_0.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_7_0.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_7_0.so
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppApp-11_7_0.so.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.bundle.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppAuth.so.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.bundle.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.dll.meta
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so
+GlobalGameJam2022/Assets/Firebase/Plugins/x86_64/FirebaseCppDatabase.so.meta
+GlobalGameJam2022/Assets/GoogleService-Info.plist
+GlobalGameJam2022/Assets/GoogleService-Info.plist.meta
+GlobalGameJam2022/Assets/Plugins.meta
+GlobalGameJam2022/Assets/Plugins/iOS.meta
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase.meta
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a.meta
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppAuth.a
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppAuth.a.meta
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppDatabase.a
+GlobalGameJam2022/Assets/Plugins/iOS/Firebase/libFirebaseCppDatabase.a.meta
+GlobalGameJam2022/Assets/Plugins/tvOS.meta
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase.meta
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppApp.a
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppApp.a.meta
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppAuth.a
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppAuth.a.meta
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppDatabase.a
+GlobalGameJam2022/Assets/Plugins/tvOS/Firebase/libFirebaseCppDatabase.a.meta
+GlobalGameJam2022/Assets/Scripts/MainMenu.cs
+GlobalGameJam2022/Assets/Scripts/MainMenu.cs.meta
+GlobalGameJam2022/Assets/StreamingAssets.meta
+GlobalGameJam2022/Assets/StreamingAssets/google-services-desktop.json
+GlobalGameJam2022/Assets/StreamingAssets/google-services-desktop.json.meta
+GlobalGameJam2022/ProjectSettings/GvhProjectSettings.xml
