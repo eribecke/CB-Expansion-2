@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour, ISaveable
 {
     public string SplashScreen = "TestScene";
     
@@ -23,6 +23,16 @@ public class GameController : MonoBehaviour
     private int _activeLevelNum = 0;
 
     private LevelController _currentLevelController;
+
+    public void SaveData(PlayerData data)
+    {
+        data.currSceneName = SceneManager.GetActiveScene().name;
+    }
+
+    public void LoadData(PlayerData data)
+    {
+        SceneManager.LoadScene(data.currSceneName);
+    }
 
     public LevelController CurrentLevelController
     {
@@ -60,6 +70,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        
         _overallBalanceScore = 0;
         _cachedBalanceScore = 0;
         _current = 0.5f;

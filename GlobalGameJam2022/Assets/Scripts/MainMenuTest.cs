@@ -5,11 +5,13 @@ using Firebase;
 using Firebase.Database;
 using UnityEngine.UI;
 using Firebase.Extensions;
+using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenuTest : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button ice;
+    public Button startGame;
     DatabaseReference reference;
     private string currValue;
     void Start()
@@ -18,6 +20,8 @@ public class MainMenu : MonoBehaviour
         reference = FirebaseDatabase.DefaultInstance.RootReference;
         //add listener for ice button
         ice.onClick.AddListener(() => IceClicked());
+        startGame.onClick.AddListener(() => StartGame());
+        
         //grab current saved value from database
         //removes the test child - > reference.Child("test").RemoveValueAsync();
         FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
@@ -40,6 +44,11 @@ public class MainMenu : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void IceClicked()
