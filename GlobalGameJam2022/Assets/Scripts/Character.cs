@@ -38,9 +38,14 @@ public class Character : MonoBehaviour, ISaveable
     {
         
         GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
+        GameObject wolf2 = GameObject.FindGameObjectWithTag("Wolf2");
+
         data.wolf1X = wolf1.transform.position.x;
         data.wolf1Y = wolf1.transform.position.y;
         data.wolf1Z = wolf1.transform.position.z;
+        data.wolf2X = wolf2.transform.position.x;
+        data.wolf2Y = wolf2.transform.position.y;
+        data.wolf2Z = wolf2.transform.position.z;
         data.currSceneName = SceneManager.GetActiveScene().name;
     }
 
@@ -49,10 +54,14 @@ public class Character : MonoBehaviour, ISaveable
     {
         Debug.Log("load called from character controller");
         GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
+        GameObject wolf2 = GameObject.FindGameObjectWithTag("Wolf2");
         Debug.Log(wolf1.transform.position.x + "x pos before load");
         Vector3 wolf1Pos = new Vector3(data.wolf1X, data.wolf1Y, data.wolf1Z);
         wolf1.transform.position = wolf1Pos;
         Debug.Log(wolf1.transform.position.x + " x after load");
+
+        Vector3 wolf2Pos = new Vector3(data.wolf2X, data.wolf2Y, data.wolf2Z);
+        wolf2.transform.position = wolf2Pos;
     }
 
     private void Awake()

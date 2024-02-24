@@ -27,6 +27,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1695210270079913525, guid: f476fefba84d45c48864899f274f618a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wolf2
+      objectReference: {fileID: 0}
     - target: {fileID: 1695210270079913526, guid: f476fefba84d45c48864899f274f618a,
         type: 3}
       propertyPath: m_RootOrder

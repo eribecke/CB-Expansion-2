@@ -50,6 +50,10 @@ public class SaveManager : MonoBehaviour
         reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("Y").SetValueAsync(playerData.wolf1Y);
         reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("Z").SetValueAsync(playerData.wolf1Z);
 
+        reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("X").SetValueAsync(playerData.wolf2X);
+        reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Y").SetValueAsync(playerData.wolf2Y);
+        reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Z").SetValueAsync(playerData.wolf2Z);
+
         //grab current saved value from database
         /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
@@ -125,6 +129,56 @@ public class SaveManager : MonoBehaviour
 
             }
         });
+
+        FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf2").Child("X").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf2X = float.Parse(snapshot.Value.ToString());
+
+            }
+        });
+
+        FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf2").Child("Y").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf2Y = float.Parse(snapshot.Value.ToString());
+
+            }
+        });
+
+        FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf2").Child("Z").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf2Z = float.Parse(snapshot.Value.ToString());
+
+            }
+        });
+
+
 
 
 
