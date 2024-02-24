@@ -136,7 +136,7 @@ public class Character : MonoBehaviour
         Debug.DrawRay(_collider2D.bounds.center - new Vector3(_collider2D.bounds.extents.x,0), gravVector*(_collider2D.bounds.extents.y + tolerance), rayColor);
         Debug.DrawRay(_collider2D.bounds.center + new Vector3(_collider2D.bounds.extents.x,((_collider2D.bounds.extents.y + tolerance)* -GravityDirection)), new Vector2(-Math.Abs(GravityDirection),0.0f)*(_collider2D.bounds.extents.y), rayColor);
         
-        Debug.Log(raycast.collider);
+        //Debug.Log(raycast.collider);
         
         return raycast.collider != null;
     }

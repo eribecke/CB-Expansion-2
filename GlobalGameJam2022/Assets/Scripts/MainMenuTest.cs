@@ -10,8 +10,9 @@ using UnityEngine.SceneManagement;
 public class MainMenuTest : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Button ice;
+    public Button loadGame;
     public Button startGame;
+    public SaveManager saveManager;
     DatabaseReference reference;
     private string currValue;
     void Start()
@@ -19,24 +20,10 @@ public class MainMenuTest : MonoBehaviour
         //initialize database reference
         reference = FirebaseDatabase.DefaultInstance.RootReference;
         //add listener for ice button
-        ice.onClick.AddListener(() => IceClicked());
+        loadGame.onClick.AddListener(() => LoadGameClicked());
         startGame.onClick.AddListener(() => StartGame());
         
-        //grab current saved value from database
-        //removes the test child - > reference.Child("test").RemoveValueAsync();
-        FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
-            if (task.IsFaulted)
-            {
-
-            }
-            else if (task.IsCompleted)
-            {
-                DataSnapshot snapshot = task.Result;
-                currValue = snapshot.Value.ToString();
-                Debug.Log(currValue + " initial string");
-
-            }
-        });
+    
 
     }
 
@@ -51,14 +38,15 @@ public class MainMenuTest : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void IceClicked()
+    public void LoadGameClicked()
     {
+        Debug.Log("load clicked");
 
-
+        saveManager.LoadGameData();
         //update the value in the database
-        reference.Child("test").Child("ice").SetValueAsync("ice" + currValue);
+        //reference.Child("test").Child("ice").SetValueAsync("ice" + currValue);
         //grab current saved value from database
-        FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
+        /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
             {
 
@@ -72,7 +60,7 @@ public class MainMenuTest : MonoBehaviour
                 Debug.Log(currValue + " updated");
 
             }
-        });
+        });*/
 
 
     }

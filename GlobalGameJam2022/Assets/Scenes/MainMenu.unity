@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 1132093510}
   - component: {fileID: 1132093509}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Load Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -724,7 +724,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ice
+  m_Text: 'Load Game
+
+'
 --- !u!222 &1663355954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -928,8 +930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63d1ffe5c7bba604eac182c65f6726f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ice: {fileID: 1132093509}
+  loadGame: {fileID: 1132093509}
   startGame: {fileID: 147283092}
+  saveManager: {fileID: 994560181}
 --- !u!1 &1924495340
 GameObject:
   m_ObjectHideFlags: 0

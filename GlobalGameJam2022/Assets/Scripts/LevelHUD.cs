@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelHUD : MonoBehaviour
 {
@@ -11,12 +12,24 @@ public class LevelHUD : MonoBehaviour
     public Animator OverlayAnimator;
     public DialogueHUDInfo DialogueHudInfo;
     public DialogueHUDInfo DialogueHudInfoOutro;
+    public Button saveGame;
+    private SaveManager saveManager;
 
     private CharacterController _characterController;
 
     private void Start()
     {
+        saveManager = FindObjectOfType<SaveManager>();
+        Debug.Log("started");
+        Debug.Log("save manager" +  saveManager);
         _characterController = FindObjectOfType<CharacterController>();
+        saveGame.onClick.AddListener(() => SaveGame());
+    }
+
+    public void SaveGame()
+    {
+        Debug.Log("Save Pressed");
+        saveManager.SaveGameData();
     }
 
     public void SetupIntroText(string introText)

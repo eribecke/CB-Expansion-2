@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour, ISaveable
 
     public string EndScene;
 
+    private SaveManager saveManager;
+
     [Header("Music Controls")] 
     public int MaxImbalance;
 
@@ -31,6 +33,7 @@ public class GameController : MonoBehaviour, ISaveable
 
     public void LoadData(PlayerData data)
     {
+        Debug.Log("load called from game controller");
         SceneManager.LoadScene(data.currSceneName);
     }
 
@@ -65,12 +68,16 @@ public class GameController : MonoBehaviour, ISaveable
     
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);    
+        DontDestroyOnLoad(this.gameObject);   
+        saveManager = FindObjectOfType<SaveManager>();
     }
 
     private void Start()
     {
-        
+        if(saveManager.playerData != null)
+        {
+            LoadData(saveManager.playerData);
+        }
         _overallBalanceScore = 0;
         _cachedBalanceScore = 0;
         _current = 0.5f;
