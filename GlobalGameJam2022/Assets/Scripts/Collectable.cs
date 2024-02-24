@@ -8,6 +8,7 @@ public class Collectable : MonoBehaviour
     public WorldEnum world;
     public Material greenMaterial;
     public Material orangeMaterial;
+    public int key;
 
     void Start()
     {

@@ -12,7 +12,8 @@ public class PlayerData
     public float wolf2X = 0;
     public float wolf2Y = 0;
     public float wolf2Z = 0;
-  
-    
+    public Dictionary<int, string> gCollectables;
+    public Dictionary<int, Collectable> oCollectables;
+
 
 }

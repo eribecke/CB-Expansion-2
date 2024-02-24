@@ -54,6 +54,8 @@ public class SaveManager : MonoBehaviour
         reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Y").SetValueAsync(playerData.wolf2Y);
         reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Z").SetValueAsync(playerData.wolf2Z);
 
+        reference.Child("PlayerData").Child("Collectables").Child("GreenCollectables").SetValueAsync(playerData.gCollectables);
+
         //grab current saved value from database
         /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
