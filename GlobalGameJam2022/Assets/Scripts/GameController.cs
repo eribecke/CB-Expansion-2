@@ -26,11 +26,13 @@ public class GameController : MonoBehaviour, ISaveable
 
     private LevelController _currentLevelController;
 
+    //implements SaveData from interface, saves scene name
     public void SaveData(PlayerData data)
     {
         data.currSceneName = SceneManager.GetActiveScene().name;
     }
 
+    //implements LoadData from ISaveable interface
     public void LoadData(PlayerData data)
     {
         Debug.Log("load called from game controller");
@@ -69,6 +71,8 @@ public class GameController : MonoBehaviour, ISaveable
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);   
+        
+        //SaveManager reference
         saveManager = FindObjectOfType<SaveManager>();
     }
 

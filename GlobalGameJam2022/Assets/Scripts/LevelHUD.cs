@@ -19,15 +19,20 @@ public class LevelHUD : MonoBehaviour
 
     private void Start()
     {
+        //references SaveManager
         saveManager = FindObjectOfType<SaveManager>();
         Debug.Log("started");
         Debug.Log("save manager" +  saveManager);
+
         _characterController = FindObjectOfType<CharacterController>();
+
+        //save button listener
         saveGame.onClick.AddListener(() => SaveGame());
     }
 
     public void SaveGame()
     {
+        //calls SaveGameData method from SaveManager script after save button is clicked
         Debug.Log("Save Pressed");
         saveManager.SaveGameData();
     }

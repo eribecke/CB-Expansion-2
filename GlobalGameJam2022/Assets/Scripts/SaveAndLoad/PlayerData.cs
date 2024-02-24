@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class PlayerData 
 {
+    //PlayerData objects will hold all information that will be saved and loaded
     public string currSceneName;
-    public int playerX = 0;
-    public int playerY = 0;
-    public int playerZ = 0;
+    public float wolf1X = 0;
+    public float wolf1Y = 0;
+    public float wolf1Z = 0;
+    public float wolf2X = 0;
+    public float wolf2Y = 0;
+    public float wolf2Z = 0;
+  
     
 
 }

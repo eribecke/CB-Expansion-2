@@ -35,6 +35,7 @@ public class MainMenuTest : MonoBehaviour
 
     public void StartGame()
     {
+        //loads first level
         SceneManager.LoadScene(0);
     }
 
@@ -42,26 +43,10 @@ public class MainMenuTest : MonoBehaviour
     {
         Debug.Log("load clicked");
 
+        //calls LoadGameData() from SaveManager
+        
         saveManager.LoadGameData();
-        //update the value in the database
-        //reference.Child("test").Child("ice").SetValueAsync("ice" + currValue);
-        //grab current saved value from database
-        /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
-            if (task.IsFaulted)
-            {
-
-            }
-            else if (task.IsCompleted)
-            {
-                DataSnapshot snapshot = task.Result;
-
-
-                currValue = snapshot.Value.ToString();
-                Debug.Log(currValue + " updated");
-
-            }
-        });*/
-
+        
 
     }
 }

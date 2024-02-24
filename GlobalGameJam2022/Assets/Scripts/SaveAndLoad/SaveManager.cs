@@ -16,6 +16,7 @@ public class SaveManager : MonoBehaviour
     DatabaseReference reference;
     private void Awake()
     {
+        //moves to each scene, starting from the Main Menu
         DontDestroyOnLoad(this.gameObject);
         
     }
@@ -24,15 +25,19 @@ public class SaveManager : MonoBehaviour
     {
         //initialize database reference
         reference = FirebaseDatabase.DefaultInstance.RootReference;
+        
+
     }
 
     public void SaveGameData()
     {
+        //If no playerData object exists, create a new one
         if(playerData == null)
         {
             playerData = new PlayerData();
         }
 
+        //grabs all scripts with ISaveable interface implemented and stores than in an IEnumerable, called the SaveData method on each item
         IEnumerable<ISaveable> saveScripts = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>();
         foreach (ISaveable script in saveScripts)
         {
@@ -41,6 +46,10 @@ public class SaveManager : MonoBehaviour
 
         //update the value in the database
         reference.Child("PlayerData").Child("Scene").SetValueAsync(playerData.currSceneName);
+        reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("X").SetValueAsync(playerData.wolf1X);
+        reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("Y").SetValueAsync(playerData.wolf1Y);
+        reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("Z").SetValueAsync(playerData.wolf1Z);
+
         //grab current saved value from database
         /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
@@ -68,6 +77,58 @@ public class SaveManager : MonoBehaviour
         {
             playerData = new PlayerData();
         }
+
+       FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf1").Child("X").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf1X = float.Parse(snapshot.Value.ToString());
+            
+            }
+        });
+
+        FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf1").Child("Y").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf1Y = float.Parse(snapshot.Value.ToString());
+
+            }
+        });
+
+        FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Positions").Child("Wolf1").Child("Z").GetValueAsync().ContinueWithOnMainThread(task => {
+            if (task.IsFaulted)
+            {
+                Debug.Log("ggs");
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                //Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
+                playerData.wolf1Z = float.Parse(snapshot.Value.ToString());
+
+            }
+        });
+
+
+
+
         FirebaseDatabase.DefaultInstance.GetReference("PlayerData").Child("Scene").GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
             {
@@ -77,8 +138,12 @@ public class SaveManager : MonoBehaviour
             {
                 DataSnapshot snapshot = task.Result;
                 Debug.Log(snapshot.Value.ToString());
+
+                //setting playerData values grabbed from Firebase
                 playerData.currSceneName = snapshot.Value.ToString();
                 Debug.Log(playerData.currSceneName + " scene name");
+
+                //loads saved scene
                 SceneManager.LoadScene(playerData.currSceneName);
                
                
@@ -86,15 +151,10 @@ public class SaveManager : MonoBehaviour
             }
         });
 
-        IEnumerable<ISaveable> saveScripts = FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>();
-        Debug.Log(saveScripts.ToArray().Length);
-        foreach (ISaveable script in saveScripts)
-        {
-            script.LoadData(playerData);
-            
-        }
-        
-       // 
+       
+
+
+
     }
     
 }

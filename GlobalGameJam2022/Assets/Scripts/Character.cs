@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, ISaveable
 {
     public float SpeedModifier = 20.0f;
     public float JumpModifier = 50.0f;
@@ -22,6 +23,7 @@ public class Character : MonoBehaviour
     private bool _exitable = false;
     private float _jumpCooldown = 0.0f;
     private Animator _animator;
+    private int count;
 
     private float _lastHorizontalSpeed = 0.0f;
     private bool _facingRight = true;
@@ -30,7 +32,33 @@ public class Character : MonoBehaviour
 
     private const string kWarpTag = "WarpZone";
     private const string kEndTag = "EndZone";
+    private SaveManager saveManager;
 
+    public void SaveData(PlayerData data)
+    {
+        
+        GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
+        data.wolf1X = wolf1.transform.position.x;
+        data.wolf1Y = wolf1.transform.position.y;
+        data.wolf1Z = wolf1.transform.position.z;
+        data.currSceneName = SceneManager.GetActiveScene().name;
+    }
+
+    //implements LoadData from ISaveable interface
+    public void LoadData(PlayerData data)
+    {
+        Debug.Log("load called from character controller");
+        GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
+        Debug.Log(wolf1.transform.position.x + "x pos before load");
+        Vector3 wolf1Pos = new Vector3(data.wolf1X, data.wolf1Y, data.wolf1Z);
+        wolf1.transform.position = wolf1Pos;
+        Debug.Log(wolf1.transform.position.x + " x after load");
+    }
+
+    private void Awake()
+    {
+        saveManager = FindObjectOfType<SaveManager>();
+    }
     public bool Warpable
     {
         get => _warpable;
@@ -43,6 +71,10 @@ public class Character : MonoBehaviour
 
     void Start()
     {
+        if (saveManager.playerData != null)
+        {
+            LoadData(saveManager.playerData);
+        }
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _collider2D = GetComponent<Collider2D>();
         _animator = GetComponent<Animator>();

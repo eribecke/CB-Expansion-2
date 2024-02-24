@@ -23,16 +23,31 @@ public class LevelController : MonoBehaviour
     public string OutroTextBalanced = "Fin";
     
     private GameController GameController;
+    private SaveManager saveManager;
     private float _countdown;
     private LevelState _state;
 
     private void Start()
     {
         GameController = FindObjectOfType<GameController>();
-        _countdown = TimeBeforeFadeout;
+        //getting SaveManger
+        saveManager = FindObjectOfType<SaveManager>();
         _state = LevelState.eIntro;
+        
         CharacterController.InputBlocked = true;
-        LevelHud.SetupIntroText(IntroText);
+
+        //if game is loaded, will skip over intro text and will not fade in
+        if(saveManager.playerData == null)
+        {
+       
+            LevelHud.SetupIntroText(IntroText);
+            _countdown = TimeBeforeFadeout;
+        }
+        else
+        {
+            _countdown = 0;
+        }
+       
         CharacterController.Setup(GameController, this);
 
         if (GameController != null)
