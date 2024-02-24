@@ -36,10 +36,11 @@ public class Character : MonoBehaviour, ISaveable
 
     public void SaveData(PlayerData data)
     {
-        
+        //getting wolf objects from scene
         GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
         GameObject wolf2 = GameObject.FindGameObjectWithTag("Wolf2");
 
+        //updating PlayerData values
         data.wolf1X = wolf1.transform.position.x;
         data.wolf1Y = wolf1.transform.position.y;
         data.wolf1Z = wolf1.transform.position.z;
@@ -56,6 +57,8 @@ public class Character : MonoBehaviour, ISaveable
         GameObject wolf1 = GameObject.FindGameObjectWithTag("Wolf1");
         GameObject wolf2 = GameObject.FindGameObjectWithTag("Wolf2");
         Debug.Log(wolf1.transform.position.x + "x pos before load");
+
+        //setting positions for wolf objects
         Vector3 wolf1Pos = new Vector3(data.wolf1X, data.wolf1Y, data.wolf1Z);
         wolf1.transform.position = wolf1Pos;
         Debug.Log(wolf1.transform.position.x + " x after load");

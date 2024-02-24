@@ -44,7 +44,7 @@ public class SaveManager : MonoBehaviour
             script.SaveData(playerData);
         }
 
-        //update the value in the database
+        //update the values in the database
         reference.Child("PlayerData").Child("Scene").SetValueAsync(playerData.currSceneName);
         reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("X").SetValueAsync(playerData.wolf1X);
         reference.Child("PlayerData").Child("Positions").Child("Wolf1").Child("Y").SetValueAsync(playerData.wolf1Y);
@@ -54,7 +54,7 @@ public class SaveManager : MonoBehaviour
         reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Y").SetValueAsync(playerData.wolf2Y);
         reference.Child("PlayerData").Child("Positions").Child("Wolf2").Child("Z").SetValueAsync(playerData.wolf2Z);
 
-        reference.Child("PlayerData").Child("Collectables").Child("GreenCollectables").SetValueAsync(playerData.gCollectables);
+        //reference.Child("PlayerData").Child("Collectables").Child("GreenCollectables").SetValueAsync(playerData.gCollectables);
 
         //grab current saved value from database
         /*FirebaseDatabase.DefaultInstance.GetReference("test").Child("ice").GetValueAsync().ContinueWithOnMainThread(task => {

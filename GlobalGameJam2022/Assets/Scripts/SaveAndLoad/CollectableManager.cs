@@ -15,9 +15,11 @@ public class CollectableManager : MonoBehaviour, ISaveable
     }
     public void SaveData(PlayerData data)
     {
-        collectables = FindObjectsOfType<Collectable>();
+        //fetch collectables from scene
+       /* collectables = FindObjectsOfType<Collectable>();
         Dictionary<int, string> remainingGreen = new Dictionary<int, string>();
         
+        //adding non-collected collectables to the dictionary
         foreach (Collectable gColl in collectables)
         {
             if(gColl.tag == "GCollectable")
@@ -27,7 +29,8 @@ public class CollectableManager : MonoBehaviour, ISaveable
             
         }
 
-        data.gCollectables = remainingGreen;
+        //updating PlayerData
+        data.gCollectables = remainingGreen; */
        
     }
 
