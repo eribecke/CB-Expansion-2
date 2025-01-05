@@ -12,7 +12,9 @@ This project is an expansion of a Global Game Jam 2022 game called Harmony. I ad
 ## References
 
 Global Game Jam Webpage for Harmony: https://v3.globalgamejam.org/2022/games/harmony-0 
+
 Original Repository for Harmony: https://github.com/JakeMDuthie/GlobalGameJam_2022 
+
 Firebase: https://firebase.google.com/ 
 
 ## Created by
